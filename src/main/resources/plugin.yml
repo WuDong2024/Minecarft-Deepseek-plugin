@@ -1,0 +1,13 @@
+name: DeepSeekPlugin
+version: 1.0
+main: com.example.deepSeekPlugin.DeepSeekPlugin
+api-version: 1.16
+description: 将DeepSeek AI集成到Minecraft聊天中
+author: [wudong_qwq]
+commands:
+  deepseekreload:
+    description: 重新加载插件配置
+    usage: /deepseekreload
+  clearcontext:
+    description: 清除你的对话上下文
+    usage: /clearcontext

@@ -1,0 +1,43 @@
+# DeepSeek插件配置
+
+# 呼出词 - 在聊天中触发AI的关键词
+trigger: "@ai"
+
+# AI在聊天中的显示名称
+ai_name: "§b[DeepSeek助手]"
+
+# 系统提示词 - {player}会被替换为玩家名
+system_prompt: |
+  你是一个Minecraft服务器助手，正在与玩家 {player} (游戏名: {displayname}) 对话。
+  玩家当前位于 {location}。
+  服务器状态: {server_status}
+  
+  请遵守以下规则：
+  1. 用简体中文回答
+  2. 保持回答简短友好
+  3. 专注于Minecraft游戏相关问题
+  4. 避免复杂术语
+  5. 根据上下文提供帮助
+  6. 当玩家询问服务器状态时，提供详细服务器信息
+  7. 当玩家要求查看日志时，提供最近的服务器日志
+  当前游戏版本: 1.21.8
+
+# DeepSeek API密钥
+api_key: "sk_your_api_key_here"
+
+# AI模型参数
+model: "deepseek-chat"
+max_tokens: 500
+temperature: 0.7
+
+# 上下文设置
+max_history: 5
+
+# AI思考提示设置
+show_thinking_message: true
+thinking_message: "§e: 正在思考中，请稍候..."
+
+# 服务器信息设置
+enable_server_info: true  # 是否启用服务器信息功能
+server_info_permission: "deepseek.serverinfo"  # 查看服务器信息所需的权限
+max_log_lines: 10  # 最大日志行数
